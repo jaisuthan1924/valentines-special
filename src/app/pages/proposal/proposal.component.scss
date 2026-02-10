@@ -1,0 +1,75 @@
+.proposal-wrapper {
+  height: 100vh;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 50px 40px;
+  border-radius: 25px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+  width: 380px;
+  max-width: 90%;
+  animation: popIn 0.8s ease;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+.btn-group {
+  position: relative;
+  height: 120px;
+}
+
+button {
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.yes-btn {
+  background: #ffffff;
+  color: #ff5f6d;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.no-btn {
+  background: #000;
+  color: #fff;
+  position: absolute;
+  transition: 0.15s ease;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

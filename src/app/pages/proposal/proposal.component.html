@@ -1,0 +1,19 @@
+<div class="proposal-wrapper">
+  <div class="card">
+    <h1>Will you be my Valentine? 💖</h1>
+    <p>You make my heart smile every single day 🥰</p>
+
+    <div class="btn-group">
+      <button class="yes-btn" (click)="yesClicked()">
+        Yes 💕
+      </button>
+
+      <button
+        class="no-btn"
+        [ngStyle]="noStyle"
+        (mouseenter)="moveNo()">
+        No 🙈
+      </button>
+    </div>
+  </div>
+</div>
